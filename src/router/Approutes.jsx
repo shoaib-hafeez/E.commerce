@@ -1,8 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 
-const AppRouter = () => {
+import { BrowserRouter, Route, Routes } from "react-router";
+import Login from "../pages/login/login";
+import Signup from "../pages/signup/signup";
+
+
+const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -10,7 +12,8 @@ const AppRouter = () => {
         <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
+    
   );
 };
 
-export default AppRouter;
+export default AppRoutes;
